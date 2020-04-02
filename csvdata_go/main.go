@@ -25,8 +25,8 @@ type Data struct {
 
 func main() {
 
-	strChan = make(chan string, 1)
-	dataChan = make(chan *Data, 1)
+	strChan = make(chan string, 1000)
+	dataChan = make(chan *Data, 1000)
 	fileName := "data.csv"
 
 	var wgWorker sync.WaitGroup
